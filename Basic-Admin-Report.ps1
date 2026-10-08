@@ -70,4 +70,5 @@ $adminReport | Select-Object ComputerName, Domain
 $adminReport | Select-Object Domain, ComputerName
 
 $bios | Get-Member
+
 $bios.ReleaseDate
