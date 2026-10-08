@@ -15,4 +15,4 @@ $info = [PSCustomObject]@{
         UptimeHours       = [math]::Round($uptime.TotalHours, 2)
 }
 
-write-output $info
+$info
