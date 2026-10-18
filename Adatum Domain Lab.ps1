@@ -41,7 +41,6 @@ foreach ($computer in $computers) {
 #Challenge 6, Flag local services for review
 $services = @('EventLog', 'W32Time', 'Spooler');
 $count = 0
-
 foreach ($svc in $services) {
     $info = Get-Service -Name $svc
     if ($info.Status -eq 'Running') {
@@ -59,10 +58,8 @@ import-module activedirectory
 $user = @(get-aduser -filter * 
     -searchbase "DC=Adatum,DC=com" 
     -Server LON-DC1.Adatum.com)
-
 $enabledCount = 0
 $disabledCount = 0
-
 foreach ($u in $user) {
     if ($u.Enabled -eq $true) {
         write-output "Enabled: $($u.SamAccountName)"
