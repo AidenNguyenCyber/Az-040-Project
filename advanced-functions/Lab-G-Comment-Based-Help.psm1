@@ -19,7 +19,7 @@ Gets system information from LON-DC1.
 "LON-DC1","LON-SVR1" | Get-CorpOSInfo
 
 Gets system information from both computers through the pipeline.
-#>#>
+#>
 function Get-CorpOSInfo {
     [CmdletBinding()]
     param(

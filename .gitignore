@@ -1,0 +1,3 @@
+# Ignore CSV reports created by lab exercises
+Challenge09-*.csv
+AdminReport.csv
